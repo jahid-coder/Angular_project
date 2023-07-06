@@ -16,6 +16,8 @@ export class HearderComponent{
     }
 
     onFetchData(){
-        this.dataStorageService.fetchRecipes();
+        this.dataStorageService.fetchRecipes().subscribe( recipes =>{
+            console.log(recipes);
+        });
     }
 }
