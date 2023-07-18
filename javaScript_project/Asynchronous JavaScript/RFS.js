@@ -10,8 +10,8 @@ console.log('First Line')
 
 // console.log('File 1 Data ->'+ data2)
 
-fs.readFile('f1.txt',RFS1)
 
+fs.readFile('f1.txt',RFS1)
 
 function RFS1(err,data){
     if(err){
@@ -19,11 +19,13 @@ function RFS1(err,data){
     }
 
     console.log('File 1 data ->'+ data)
+    fs.readFile('f2.txt',RFS2)
+   
 
 }
 
 
-fs.readFile('f2.txt',RFS2)
+
 
 function RFS2(err, data){
     if(err){
@@ -31,6 +33,19 @@ function RFS2(err, data){
     }
 
     console.log('File 2 data ->'+ data)
+    fs.readFile('f3.txt',RFS3)
+
+}
+
+
+
+
+function RFS3(err, data){
+    if(err){
+        console.log(err)
+    }
+
+    console.log('File 3 data ->'+ data)
 
 }
 
