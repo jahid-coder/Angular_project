@@ -1,0 +1,75 @@
+body{
+    background-color: lightblue;
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+/* This is a single-line comment */
+h1{
+    color: navy;
+    margin-left: 20px;
+}
+
+div {
+
+    background-color: blue;
+    margin:10px 20px 30px 40px;
+    padding: 30px 30px 30px 30px;
+    border: 15px solid green;
+    height: 200px;
+    width: 80%;
+  }
+  p{
+    text-transform: uppercase;
+    text-indent: 50px;
+    text-shadow: 2px 2px;
+  }
+ 
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+ 
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    height: 70px;
+  }
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+  
