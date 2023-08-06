@@ -11,6 +11,12 @@ export class HearderComponent{
     constructor(private dataStorageService: DataStorageService){
 
     }
+    ngOnInit() {
+        this.dataStorageService.fetchRecipes().subscribe( recipes =>{
+            console.log(recipes);
+        });
+       
+       }
     onSaveData(){
             this.dataStorageService.storeRecipes();
     }
