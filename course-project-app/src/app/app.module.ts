@@ -5,32 +5,28 @@ import { HearderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { AuthComponent } from './auth/auth.component';
-import { RecipesModule } from './recipes/recipes.module';
-import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
+import { LoggingService } from './logging.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HearderComponent,
-    AuthComponent
+    HearderComponent
+    
     
     
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RecipesModule,
-    ShoppingListModule,
     SharedModule,
     CoreModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // providers:[LoggingService]
  
 })
 export class AppModule { }
